@@ -14,7 +14,7 @@ namespace MantisLODEditor.ndmf
 
         protected override void Configure()
         {
-            var seq = InPhase(BuildPhase.Transforming);
+            var seq = InPhase(BuildPhase.Optimizing);
             seq.BeforePlugin("com.anatawa12.avatar-optimizer");
             seq.Run("Decimate Polygons by MantisLODEditor", ctx =>
             {
